@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-image-slider-box/dist/SliderBox.js b/node_modules/react-native-image-slider-box/dist/SliderBox.js
+index 476963c..9cdff26 100644
+--- a/node_modules/react-native-image-slider-box/dist/SliderBox.js
++++ b/node_modules/react-native-image-slider-box/dist/SliderBox.js
+@@ -58,7 +58,7 @@ export class SliderBox extends Component {
+   }
+ 
+   onSnap(index) {
+-    this._ref.snapToItem(index);
++    this._ref.snapToItem(index, false);
+     const { currentImageEmitter } = this.props;
+     this.setState({ currentImage: index }, () => {
+       if (currentImageEmitter) {
